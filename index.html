@@ -1,131 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Soporte Gamer | Camilo Arin</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Soporte Gamer | Camilo Arin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <meta name="description" content="Soporte técnico especializado en PCs y notebooks gamer.">
+    <meta
+      name="description"
+      content="Soporte técnico especializado en PCs y notebooks gamer."
+    />
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Fuente -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS propio -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-
-<body class="bg-gray-900 text-white">
-
+  <body class="bg-gray-900 text-white">
     <!-- TOPBAR -->
     <header class="topbar">
-  <div class="topbar-container">
-    <div class="brand">
-      FPS Gamer Santiago
-    </div>
+      <div class="topbar-container">
+        <div class="brand">FPS Gamer Santiago</div>
 
-    <a href="https://wa.me/569XXXXXXXX"
-       target="_blank"
-       class="topbar-whatsapp">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M13.601 2.326A7.854 7.854 0 0 0 8.013 0C3.58 0 0 3.58 0 8.013c0 1.412.37 2.79 1.07 4.004L0 16l4.104-1.07a8.013 8.013 0 0 0 3.91 1c4.433 0 8.013-3.58 8.013-8.013a7.95 7.95 0 0 0-2.426-5.59z"/>
-      </svg>
-      WhatsApp
-    </a>
-  </div>
-</header>
+        <div class="topbar-right">
+          <!-- Redes sociales -->
+          <div class="socials">
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/tuusuario"
+              target="_blank"
+              aria-label="Instagram"
+              class="social-link"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-.9a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"
+                />
+              </svg>
+            </a>
 
-  <!-- HERO -->
-  <section class="hero">
-  <div class="hero-overlay text-center py-24 px-6 text-white">
-    <h1 class="text-5xl font-extrabold text-green-400 mb-4">
-      Soporte Técnico Gamer
-    </h1>
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com/tuusuario"
+              target="_blank"
+              aria-label="Facebook"
+              class="social-link"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.63-1.3 1.27V11h2.2l-.35 3h-1.85v7A10 10 0 0022 12z"
+                />
+              </svg>
+            </a>
+             <!-- WhatsApp -->
+            <a
+            href="https://wa.me/569XXXXXXXX"
+            target="_blank"
+            aria-label="WhatsApp"
+            class="social-link"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path
+                fill="#25D366"
+                d="M16 0C7.163 0 0 7.163 0 16c0 2.82.737 5.47 2.02 7.77L0 32l8.46-2.02A15.92 15.92 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0z"
+              />
+              <path
+                fill="#FFF"
+                d="M23.46 18.27c-.38-.19-2.25-1.11-2.6-1.24-.35-.13-.6-.19-.85.19-.25.38-.98 1.24-1.2 1.5-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.05-1.88-1.13-1-1.89-2.24-2.11-2.62-.22-.38-.02-.59.17-.78.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.09-.19-.85-2.04-1.16-2.79-.31-.75-.63-.65-.85-.66h-.72c-.25 0-.66.09-1 .47-.35.38-1.31 1.28-1.31 3.12s1.34 3.63 1.53 3.88c.19.25 2.64 4.03 6.4 5.65.89.38 1.59.61 2.13.78.89.28 1.7.24 2.34.15.71-.11 2.25-.92 2.57-1.81.32-.89.32-1.65.22-1.81-.09-.16-.34-.25-.72-.44z"
+              />
+            </svg>
+          </a>
+          </div>
 
-    <p class="text-gray-300 max-w-2xl mx-auto">
-      Optimización, mantenimiento y reparación de equipos gamer.
-    </p>
- 
-    <div class="mt-8">
-      <a id="btn-whatsapp"
-   href="https://wa.me/569XXXXXXXX"
-   class="btn-whatsapp">
-  
-  <svg xmlns="http://www.w3.org/2000/svg"
-       viewBox="0 0 32 32"
-       width="22"
-       height="22"
-       fill="currentColor">
-    <path d="M16.01 2.003c-7.732 0-14.01 6.275-14.01 14.006 0 2.46.64 4.865 1.854 6.995L2 30l7.175-1.845a13.94 13.94 0 0 0 6.835 1.86h.006c7.73 0 14.01-6.277 14.01-14.01 0-3.748-1.46-7.274-4.11-9.925a13.945 13.945 0 0 0-9.905-4.077zm8.075 19.742c-.34.956-1.973 1.83-2.703 1.947-.703.113-1.59.16-2.56-.16-.586-.187-1.336-.433-2.3-.85-4.044-1.745-6.68-5.78-6.88-6.047-.197-.27-1.65-2.2-1.65-4.2 0-2 .99-2.986 1.35-3.39.34-.38.74-.475.99-.475.246 0 .495.003.712.015.23.012.54-.087.843.645.34.82 1.17 2.84 1.27 3.045.1.2.17.445.03.715-.14.27-.21.445-.42.68-.21.235-.44.525-.63.705-.21.21-.43.435-.18.86.25.425 1.11 1.83 2.38 2.965 1.64 1.46 3.02 1.91 3.445 2.12.43.21.69.18.95-.11.27-.29 1.09-1.27 1.38-1.705.29-.435.58-.36.98-.21.4.15 2.53 1.195 2.97 1.41.44.215.73.32.84.495.11.18.11 1.02-.23 1.98z"/>
-  </svg>
-
-  <span>Contáctame por WhatsApp</span>
-</a>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- SERVICIOS -->
-  <section class="bg-gray-800 py-16 px-6">
-    <h2 class="text-3xl text-center font-bold mb-10 text-green-400">
-      Servicios
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-      <div class="bg-gray-900 p-6 rounded-lg transition card">
-        <h3 class="text-xl font-bold mb-2">Limpieza y pasta térmica</h3>
-        <p class="text-gray-400">
-          Limpieza profunda y cambio de pasta térmica para mejorar temperaturas.
-        </p>
+         
+          
+        </div>
       </div>
+    </header>
 
-      <div class="bg-gray-900 p-6 rounded-lg transition card">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay text-center py-24 px-6 text-white">
+        <h1 class="text-5xl font-extrabold text-green-400 mb-4">
+          Soporte Técnico Gamer
+        </h1>
 
-        <h3 class="text-xl font-bold mb-2">Optimización térmica</h3>
-        <p class="text-gray-400">
-          Undervolt, airflow y ajustes para máximo rendimiento.
+        <p class="text-gray-300 max-w-2xl mx-auto">
+          Optimización, mantenimiento y reparación de equipos gamer.
         </p>
+
+        <div class="mt-8">
+          <a
+            id="btn-whatsapp"
+            href="https://wa.me/569XXXXXXXX"
+            class="btn-whatsapp"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              width="22"
+              height="22"
+              fill="currentColor"
+            >
+              <path
+                d="M16.01 2.003c-7.732 0-14.01 6.275-14.01 14.006 0 2.46.64 4.865 1.854 6.995L2 30l7.175-1.845a13.94 13.94 0 0 0 6.835 1.86h.006c7.73 0 14.01-6.277 14.01-14.01 0-3.748-1.46-7.274-4.11-9.925a13.945 13.945 0 0 0-9.905-4.077zm8.075 19.742c-.34.956-1.973 1.83-2.703 1.947-.703.113-1.59.16-2.56-.16-.586-.187-1.336-.433-2.3-.85-4.044-1.745-6.68-5.78-6.88-6.047-.197-.27-1.65-2.2-1.65-4.2 0-2 .99-2.986 1.35-3.39.34-.38.74-.475.99-.475.246 0 .495.003.712.015.23.012.54-.087.843.645.34.82 1.17 2.84 1.27 3.045.1.2.17.445.03.715-.14.27-.21.445-.42.68-.21.235-.44.525-.63.705-.21.21-.43.435-.18.86.25.425 1.11 1.83 2.38 2.965 1.64 1.46 3.02 1.91 3.445 2.12.43.21.69.18.95-.11.27-.29 1.09-1.27 1.38-1.705.29-.435.58-.36.98-.21.4.15 2.53 1.195 2.97 1.41.44.215.73.32.84.495.11.18.11 1.02-.23 1.98z"
+              />
+            </svg>
+
+            <span>Contáctame por WhatsApp</span>
+          </a>
+        </div>
       </div>
+    </section>
 
-      <div class="bg-gray-900 p-6 rounded-lg transition card">
-        <h3 class="text-xl font-bold mb-2">Diagnóstico y upgrades</h3>
-        <p class="text-gray-400">
-          Diagnóstico de fallas y mejoras de hardware gamer.
-        </p>
+    <!-- SERVICIOS -->
+    <section class="bg-gray-800 py-16 px-6">
+      <h2 class="text-3xl text-center font-bold mb-10 text-green-400">
+        Servicios
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-gray-900 p-6 rounded-lg transition card">
+          <h3 class="text-xl font-bold mb-2">Limpieza y pasta térmica</h3>
+          <p class="text-gray-400">
+            Limpieza profunda y cambio de pasta térmica para mejorar
+            temperaturas.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-lg transition card">
+          <h3 class="text-xl font-bold mb-2">Optimización térmica</h3>
+          <p class="text-gray-400">
+            Undervolt, airflow y ajustes para máximo rendimiento.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-lg transition card">
+          <h3 class="text-xl font-bold mb-2">Diagnóstico y upgrades</h3>
+          <p class="text-gray-400">
+            Diagnóstico de fallas y mejoras de hardware gamer.
+          </p>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- CONTACTO -->
+    <section class="text-center py-16 px-6">
+      <h2 class="text-3xl font-bold mb-4 text-green-400">
+        ¿Problemas con tu equipo gamer?
+      </h2>
+      <p class="text-gray-300 mb-8">Escríbeme y revisamos tu caso.</p>
 
-  <!-- CONTACTO -->
-  <section class="text-center py-16 px-6">
-    <h2 class="text-3xl font-bold mb-4 text-green-400">
-      ¿Problemas con tu equipo gamer?
-    </h2>
-    <p class="text-gray-300 mb-8">
-      Escríbeme y revisamos tu caso.
-    </p>
+      <a
+        href="mailto:camiloarintrabajo@gmail.com"
+        class="border border-green-400 text-green-400 px-6 py-3 rounded hover:bg-green-400 hover:text-black transition"
+      >
+        Enviar correo
+      </a>
+    </section>
 
-    <a href="mailto:camiloarintrabajo@gmail.com"
-       class="border border-green-400 text-green-400 px-6 py-3 rounded hover:bg-green-400 hover:text-black transition">
-      Enviar correo
-    </a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="text-center py-6 text-gray-500 text-sm">
-    © 2026 Camilo Arin — Soporte Gamer
-  </footer>
-  <script src="js/main.js"></script>
-
-</body>
-
-
-
+    <!-- FOOTER -->
+    <footer class="text-center py-6 text-gray-500 text-sm">
+      © 2026 Camilo Arin — Soporte Gamer
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

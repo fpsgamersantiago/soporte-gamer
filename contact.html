@@ -158,7 +158,8 @@
           <div class="card-alt" style="padding: 2rem;">
             <h2 class="text-green font-bold mb-6" style="font-size: 1.5rem;">Envíame un mensaje</h2>
 
-            <form id="contact-form" novalidate>
+            <form id="contact-form" action="https://formspree.io/f/mlgywkbb" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde Soporte Gamer" />
               <div class="form-group">
                 <label for="name" class="form-label">Nombre *</label>
                 <input type="text" id="name" name="name" required class="form-input" placeholder="Tu nombre" autocomplete="name" />
@@ -344,8 +345,33 @@
           }
 
           if (isValid) {
-            form.style.display = "none";
-            successMsg.classList.add("visible");
+            var submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+
+            fetch(form.action, {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+              },
+              body: new FormData(form),
+            })
+              .then(function (response) {
+                if (response.ok) {
+                  form.reset();
+                  form.style.display = "none";
+                  successMsg.classList.add("visible");
+                } else {
+                  return response.json().then(function (data) {
+                    var serverError = (data && data.error) ? data.error : "No se pudo enviar el mensaje. Intenta de nuevo.";
+                    alert(serverError);
+                    submitButton.disabled = false;
+                  });
+                }
+              })
+              .catch(function () {
+                alert("Ocurrió un error enviando el formulario. Revisa tu conexión e intenta nuevamente.");
+                submitButton.disabled = false;
+              });
           }
         });
 
